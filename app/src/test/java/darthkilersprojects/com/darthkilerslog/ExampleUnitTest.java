@@ -1,4 +1,4 @@
-package datacomprojects.com.darthkilerslog;
+package darthkilersprojects.com.darthkilerslog;
 
 import org.junit.Test;
 

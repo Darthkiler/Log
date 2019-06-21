@@ -1,10 +1,10 @@
-package datacomprojects.com.darthkilerslog;
+package darthkilersprojects.com.darthkilerslog;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-import datacomprojects.com.log.L;
+import darthkilersprojects.com.log.L;
 
 public class MainActivity extends AppCompatActivity {
 

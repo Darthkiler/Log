@@ -1,4 +1,4 @@
-package datacomprojects.com.darthkilerslog;
+package darthkilersprojects.com.log;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("datacomprojects.com.darthkilerslog", appContext.getPackageName());
+        assertEquals("datacomprojects.com.log.test", appContext.getPackageName());
     }
 }

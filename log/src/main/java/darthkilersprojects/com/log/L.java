@@ -1,4 +1,4 @@
-package datacomprojects.com.log;
+package darthkilersprojects.com.log;
 
 import android.util.Log;
 
