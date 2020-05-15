@@ -73,7 +73,7 @@ public abstract class L {
         }
 
         static <T> String createMessage(String message, T object) {
-            return message + (char) Character.SPACE_SEPARATOR + object;
+            return message + " ---> " + object;
         }
 
         static String extractClassName(Object object) {
