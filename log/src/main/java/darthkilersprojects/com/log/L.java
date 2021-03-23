@@ -7,6 +7,7 @@ import android.widget.Toast;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.List;
 
 /**
@@ -21,10 +22,14 @@ public abstract class L {
         show(Utils.extractClassName(object), object);
     }
 
+    public static void show() {
+        Log.d(TAG, "-------------------------------");
+    }
+
     public static <T> void show(String message, T object) {
-        if (object instanceof List)
+        if (object instanceof Collection)
             showList(message, (List<?>) object);
-        else if (checkNotNULL(object))
+        else if (checkNotNULL(message, object))
             Log.d(TAG, Utils.createMessage(message,object));
     }
 
@@ -36,10 +41,10 @@ public abstract class L {
         showAsToast(context,Utils.extractClassName(object),object);
     }
 
-    private static <T> boolean checkNotNULL(T arg) {
+    private static <T> boolean checkNotNULL(String message, T arg) {
         boolean isNotNull = arg != null;
         if (!isNotNull)
-            Log.d(TAG, "null");
+            Log.d(TAG, Utils.createMessage(message, "null"));
         return isNotNull;
     }
 
